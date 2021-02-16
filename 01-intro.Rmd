@@ -48,6 +48,8 @@ In the end, your R/RStudio ecosystem path will not be a copy of mine or the othe
 But we surely can share some of the first steps of this journey.
 
 
+## An opionated set of learning resources
 
+to be developed.
 
 
