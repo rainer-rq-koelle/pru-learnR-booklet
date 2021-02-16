@@ -1,6 +1,7 @@
-fig:nice-fig
-tab:nice-tab
 intro
+why-you-should-learn-r
+rrstudio-ecosystem
+an-opionated-set-of-learning-resources
 pre-action-and-installation
 wetting-your-feet-with-rstudio.cloud
 installing-rrstudio-on-a-computer-with-admin-rights

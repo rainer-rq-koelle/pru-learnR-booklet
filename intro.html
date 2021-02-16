@@ -135,7 +135,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#why-you-should-learn-r"><i class="fa fa-check"></i><b>1.1</b> Why you should learn R!</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#rrstudio-ecosystem"><i class="fa fa-check"></i><b>1.2</b> R/RStudio “Ecosystem”</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#an-opionated-set-of-learning-resources"><i class="fa fa-check"></i><b>1.3</b> An opionated set of learning resources</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html"><i class="fa fa-check"></i><b>2</b> Pre-Action and Installation</a><ul>
 <li class="chapter" data-level="2.1" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html#wetting-your-feet-with-rstudio.cloud"><i class="fa fa-check"></i><b>2.1</b> Wetting your feet with rstudio.cloud</a></li>
 <li class="chapter" data-level="2.2" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html#installing-rrstudio-on-a-computer-with-admin-rights"><i class="fa fa-check"></i><b>2.2</b> Installing R/RStudio on a Computer with Admin Rights</a></li>
@@ -173,177 +177,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="intro.html#intro">1</a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">3</a>.</p>
-<p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="intro.html#cb1-1"></a><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</span>
-<span id="cb1-2"><a href="intro.html#cb1-2"></a><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
-<img src="PRU-Learn-R_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
-<p class="caption">
-Figure 1.1: Here is a nice figure!
-</p>
+<div id="why-you-should-learn-r" class="section level2">
+<h2><span class="header-section-number">1.1</span> Why you should learn R!</h2>
+<p>There are many good reasons for <strong>“why you should learn R”</strong>.</p>
+<p>If you are unable to tell, then let’s go with a simple fact.
+The letter R can be found twice in the name RaineR.
+The R/RStudio ecosystem is very well suited to support your day-to-day work.
+Analyses can be performed in a reproducible manner. This is a gem as it supports to “re-do” the work and decisions in terms of handling data artefacts are written down in code.
+This creates transparency … and your future you will thank you.</p>
+<p>The eco-system comes with a series of value-added capabilities that the PRU uses.
+Thus, being able to navigate the ecosystem/universe, adding to its further development, or build new tools/outputs is a skill that will be useful and fun at the same time.</p>
+<p>As a teaser, this booklet is written with the <strong>bookdown</strong> package <span class="citation">(Xie <a href="#ref-R-bookdown" role="doc-biblioref">2020</a>)</span> which is on top of R Markdown and <strong>knitr</strong> <span class="citation">(<span class="citeproc-not-found" data-reference-id="xie2015"><strong>???</strong></span>)</span>.
+If this does not ring a bell with you today, do not worry. Just look at this as an example of the power of the <strong>ecosystem</strong> and how we can combine packages to create on online book like this booklet.
+And something that you will learn throughout the next sessions … all on the basis of combining prose and data analytics, and rendering this into a useful output format.</p>
+<p>In case of doubt … there are 2 Rs in RaineR … thus, it must be double-good!</p>
 </div>
-<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="intro.html#fig:nice-fig">1.1</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="intro.html#tab:nice-tab">1.1</a>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="intro.html#cb2-1"></a>knitr<span class="op">::</span><span class="kw">kable</span>(</span>
-<span id="cb2-2"><a href="intro.html#cb2-2"></a>  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
-<span id="cb2-3"><a href="intro.html#cb2-3"></a>  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></span>
-<span id="cb2-4"><a href="intro.html#cb2-4"></a>)</span></code></pre></div>
-<table>
-<caption><span id="tab:nice-tab">Table 1.1: </span>Here is a nice table!</caption>
-<thead>
-<tr class="header">
-<th align="right">Sepal.Length</th>
-<th align="right">Sepal.Width</th>
-<th align="right">Petal.Length</th>
-<th align="right">Petal.Width</th>
-<th align="left">Species</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">5.1</td>
-<td align="right">3.5</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.9</td>
-<td align="right">3.0</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.7</td>
-<td align="right">3.2</td>
-<td align="right">1.3</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.6</td>
-<td align="right">3.1</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.0</td>
-<td align="right">3.6</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.4</td>
-<td align="right">3.9</td>
-<td align="right">1.7</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.6</td>
-<td align="right">3.4</td>
-<td align="right">1.4</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.0</td>
-<td align="right">3.4</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.4</td>
-<td align="right">2.9</td>
-<td align="right">1.4</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.9</td>
-<td align="right">3.1</td>
-<td align="right">1.5</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.4</td>
-<td align="right">3.7</td>
-<td align="right">1.5</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.8</td>
-<td align="right">3.4</td>
-<td align="right">1.6</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">4.8</td>
-<td align="right">3.0</td>
-<td align="right">1.4</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">4.3</td>
-<td align="right">3.0</td>
-<td align="right">1.1</td>
-<td align="right">0.1</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.8</td>
-<td align="right">4.0</td>
-<td align="right">1.2</td>
-<td align="right">0.2</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.7</td>
-<td align="right">4.4</td>
-<td align="right">1.5</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.4</td>
-<td align="right">3.9</td>
-<td align="right">1.3</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.1</td>
-<td align="right">3.5</td>
-<td align="right">1.4</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="odd">
-<td align="right">5.7</td>
-<td align="right">3.8</td>
-<td align="right">1.7</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-<tr class="even">
-<td align="right">5.1</td>
-<td align="right">3.8</td>
-<td align="right">1.5</td>
-<td align="right">0.3</td>
-<td align="left">setosa</td>
-</tr>
-</tbody>
-</table>
-<p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(Xie <a href="#ref-R-bookdown" role="doc-biblioref">2020</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(<span class="citeproc-not-found" data-reference-id="xie2015"><strong>???</strong></span>)</span>.</p>
+<div id="rrstudio-ecosystem" class="section level2">
+<h2><span class="header-section-number">1.2</span> R/RStudio “Ecosystem”</h2>
+<p>to be developed.</p>
+<p>We speak about an ecosystem as the combination of packages supports the <strong>magic</strong>.</p>
+<p>It is worth to understand that R is the computational heart.</p>
+<p>RStudio is an integrated development environment (IDE) that provides us a cockpit to “fly” R.</p>
+<p>Packages are supporting stuff that typically make life easier, faster, or more efficient.
+Think about a seat heating or GPS navigation system in a car.</p>
+<p>At the time of writing (Febr 2021), the CRAN package repository features 17105 available packages.
+Mind you that there are other package repositories from which we can benefit.
+It will be impossible to walk through all of these packages.
+Hence, we look at it as an <strong>ecosystem</strong>.</p>
+<p>This course series is about getting you going. Obviously, there is not a single learning path.
+A wealth of information can be found on the internet.
+Many may take you to parts of the universe/ecosystem that are interesting.
+However, do not attempt to follow blindly tutorials, introduction courses, etc.
+The universe is vast. You may become a super-hero in so many disciplines.
+Take what is useful for you or the problem you are working on and feel free to jump to other material if you feel being taken of course.</p>
+<p>In the end, your R/RStudio ecosystem path will not be a copy of mine or the other course participants.
+But we surely can share some of the first steps of this journey.</p>
+</div>
+<div id="an-opionated-set-of-learning-resources" class="section level2">
+<h2><span class="header-section-number">1.3</span> An opionated set of learning resources</h2>
+<p>to be developed.</p>
 
+</div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
