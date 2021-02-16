@@ -1,3 +1,14 @@
 # Final Words
 
-We have finished a nice book.
+This booklet is work in progress. 
+It will be updated in parallel to the joint learning sessions.
+
+If you have come here before the sessions are completed, be sure to ask for getting an intro to bookdown as one of the advanced sessions.
+
+As discussed in the intro session/section, the R/RStudio Ecosystem is in constant flux.
+And there is not a single "learning path" for this journey.
+The material presented/discussed and recorded in this booklet will get you going.
+And as usual ... the sky is now the limit.
+
+Enjoy your journey with R/RStudio Ecosystem.
+Share your experiences and lessons learned and developments.
