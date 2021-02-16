@@ -6,10 +6,7 @@ pre-action-and-installation
 wetting-your-feet-with-rstudio.cloud
 installing-rrstudio-on-a-computer-with-admin-rights
 installing-rrstudio-at-work-eurocontrol
-methods
-applications
-example-one
-example-two
+first-steps
 final-words
 fragments
 bookdown
