@@ -1,3 +1,18 @@
-# Methods
+# First steps
 
-We describe our methods in this chapter.
+This session tackles 
+
+* using R as a calculator
+* objects and assignment, object naming, assingment operator vs =
+* basic data types (numeric, character, logical)
+* creating a vector, c()
+* basic functions, e.g. sum(), mean()
+* finding elements, subsetting with [], position and logical, multiple elements c(2,3,4) and [2:4]
+* named vectors and subsetting by name, my_pushups[c("Monday","Tuesday")]
+* selection/subsetting by comparison, logical operators
+
+more data structures
+* vectors
+* matrices .... we will not explore ... but keep in mind
+* data-frame
+* lists ... ditto, keep in mind
