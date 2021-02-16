@@ -1,0 +1,62 @@
+# Pre-Action and Installation
+
+This chapter talks quickly about setting up R and RStudio.
+Conceptually, the installation is a smoothless exercise on your private PC or Mac.
+Getting R/RStudio running on EUROCONTROL hardware is a slightly different story.
+
+However, before you embark on installing the software on your PC or Mac, you may want to *play around* and *wet your feet* with the help of a cloud-service. This will be briefly introduced in the next section before going further.
+
+## Wetting your feet with rstudio.cloud
+
+RStudio offers a free cloud-based service on rstudio.cloud.
+The free package is good enough for entry level project and coding time. 
+
+With a view to use R/RStudio in the mid/long term, it is recommended that you register an account with github.com.
+Git/github is certainly **advanced stuff**. Right now it is sufficient to know that git/github will be useful in managing projects and archiving code in repositories. Think about a *dropbox* for your scripts, etc.
+
+Registering a github account first allows you to log in to rstudio.cloud with your github credentials.
+And you may benefit later from the credential based link when knowing how and why a repo is a good thing. :)
+
+Thus:
+
+* register an account with github.com. Use a resonable long account name. Mine is rainer-rq-koelle. I liked it when i set it up ... today I wish I would have gone for something shorter.
+* next go to rstudio.cloud
+* choose log on with github credentials. Voila!
+
+
+
+## Installing R/RStudio on a Computer with Admin Rights
+
+To be developed. 
+
+For ECTRL set up check below.
+
+
+## Installing R/RStudio at work (EUROCONTROL)
+
+You can request the installation of the software via an installation ticket.
+Both R and RStudio belong to the "standard" software you can request via the self-service web-interface.
+
+Experience has shown that the installation is typically done within a reasonable time. 
+However, IT security settings require some configuration. This is normally overlooked first.
+
+Assuming this is the case, you will encounter a first error when attempting to update pre-installed base packages or other packages you want to download.
+The error message will speak about a problem with a group policy or something similar.
+
+Thus, if you run into something like this:
+
+```
+... some cool error text ... "group policy" .... contact your system administrator
+```
+
+* contact IT Helpdesk
+* inform them about the error; and
+* advise them to ensure the configuration in accordance with **PRU configuration settings** equivalent to Enrico or Rainer.
+
+With some luck, the ticket is solved in one go. We had cases where it took a couple of attempts.
+But there should be enough "template tickets" in the system for the helpdesk to find back the recipe and how to connect the dots.
+
+Please also consult the PRU wiki for handy system settings.
+Hoping your in-house installation ride will be a smooth one!
+If worse comes to worse, shout for help.
+
