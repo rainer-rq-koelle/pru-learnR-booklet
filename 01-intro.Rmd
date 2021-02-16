@@ -1,21 +1,53 @@
 # Introduction {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+## Why you should learn R!
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+There are many good reasons for **"why you should learn R"**.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+If you are unable to tell, then let's go with a simple fact.
+The letter R can be found twice in the name RaineR. 
+The R/RStudio ecosystem is very well suited to support your day-to-day work.
+Analyses can be performed in a reproducible manner. This is a gem as it supports to "re-do" the work and decisions in terms of handling data artefacts are written down in code.
+This creates transparency ... and your future you will thank you.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+The eco-system comes with a series of value-added capabilities that the PRU uses.
+Thus, being able to navigate the ecosystem/universe, adding to its further development, or build new tools/outputs is a skill that will be useful and fun at the same time.
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+As a teaser, this booklet is written with the **bookdown** package [@R-bookdown] which is on top of R Markdown and **knitr** [@xie2015].
+If this does not ring a bell with you today, do not worry. Just look at this as an example of the power of the **ecosystem** and how we can combine packages to create on online book like this booklet.
+And something that you will learn throughout the next sessions ... all on the basis of combining prose and data analytics, and rendering this into a useful output format.
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+In case of doubt ... there are 2 Rs in RaineR ... thus, it must be double-good!
+
+## R/RStudio "Ecosystem"
+
+to be developed. 
+
+We speak about an ecosystem as the combination of packages supports the **magic**.
+
+It is worth to understand that R is the computational heart.
+
+RStudio is an integrated development environment (IDE) that provides us a cockpit to "fly" R.
+
+Packages are supporting stuff that typically make life easier, faster, or more efficient.
+Think about a seat heating or GPS navigation system in a car. 
+
+At the time of writing (Febr 2021), the CRAN package repository features 17105 available packages.
+Mind you that there are other package repositories from which we can benefit.
+It will be impossible to walk through all of these packages.
+Hence, we look at it as an **ecosystem**.
+
+This course series is about getting you going. Obviously, there is not a single learning path.
+A wealth of information can be found on the internet. 
+Many may take you to parts of the universe/ecosystem that are interesting.
+However, do not attempt to follow blindly tutorials, introduction courses, etc. 
+The universe is vast. You may become a super-hero in so many disciplines.
+Take what is useful for you or the problem you are working on and feel free to jump to other material if you feel being taken of course. 
+
+In the end, your R/RStudio ecosystem path will not be a copy of mine or the other course participants.
+But we surely can share some of the first steps of this journey.
+
+
+
+
+
