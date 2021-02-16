@@ -8,3 +8,5 @@ applications
 example-one
 example-two
 final-words
+fragments
+bookdown
