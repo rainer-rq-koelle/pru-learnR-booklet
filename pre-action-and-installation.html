@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Final Words | PRU - Getting Started with R/RStudio Ecosystem</title>
+  <title>Chapter 2 Pre-Action and Installation | PRU - Getting Started with R/RStudio Ecosystem</title>
   <meta name="description" content="This booklet comprises the working material for getting started with R/RStudio. It reflects the hacking sessions of PRU members" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Final Words | PRU - Getting Started with R/RStudio Ecosystem" />
+  <meta property="og:title" content="Chapter 2 Pre-Action and Installation | PRU - Getting Started with R/RStudio Ecosystem" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="https://github.com/rainer-rq-koelle/pru-learnR-booklet" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Final Words | PRU - Getting Started with R/RStudio Ecosystem" />
+  <meta name="twitter:title" content="Chapter 2 Pre-Action and Installation | PRU - Getting Started with R/RStudio Ecosystem" />
   
   <meta name="twitter:description" content="This booklet comprises the working material for getting started with R/RStudio. It reflects the hacking sessions of PRU members" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="applications.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="methods.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -171,26 +171,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="final-words" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Final Words</h1>
-<p>This booklet is work in progress.
-It will be updated in parallel to the joint learning sessions.</p>
-<p>If you have come here before the sessions are completed, be sure to ask for getting an intro to bookdown as one of the advanced sessions.</p>
-<p>As discussed in the intro session/section, the R/RStudio Ecosystem is in constant flux.
-And there is not a single “learning path” for this journey.
-The material presented/discussed and recorded in this booklet will get you going.
-And as usual … the sky is now the limit.</p>
-<p>Enjoy your journey with R/RStudio Ecosystem.
-Share your experiences and lessons learned and developments.</p>
+<div id="pre-action-and-installation" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Pre-Action and Installation</h1>
+<p>This chapter talks quickly about setting up R and RStudio.
+Conceptually, the installation is a smoothless exercise on your private PC or Mac.
+Getting R/RStudio running on EUROCONTROL hardware is a slightly different story.</p>
+<p>However, before you embark on installing the software on your PC or Mac, you may want to <em>play around</em> and <em>wet your feet</em> with the help of a cloud-service. This will be briefly introduced in the next section before going further.</p>
+<div id="wetting-your-feet-with-rstudio.cloud" class="section level2">
+<h2><span class="header-section-number">2.1</span> Wetting your feet with rstudio.cloud</h2>
+<p>RStudio offers a free cloud-based service on rstudio.cloud.
+The free package is good enough for entry level project and coding time.</p>
+<p>With a view to use R/RStudio in the mid/long term, it is recommended that you register an account with github.com.
+Git/github is certainly <strong>advanced stuff</strong>. Right now it is sufficient to know that git/github will be useful in managing projects and archiving code in repositories. Think about a <em>dropbox</em> for your scripts, etc.</p>
+<p>Registering a github account first allows you to log in to rstudio.cloud with your github credentials.
+And you may benefit later from the credential based link when knowing how and why a repo is a good thing. :)</p>
+<p>Thus:</p>
+<ul>
+<li>register an account with github.com. Use a resonable long account name. Mine is rainer-rq-koelle. I liked it when i set it up … today I wish I would have gone for something shorter.</li>
+<li>next go to rstudio.cloud</li>
+<li>choose log on with github credentials. Voila!</li>
+</ul>
+</div>
+<div id="installing-rrstudio-on-a-computer-with-admin-rights" class="section level2">
+<h2><span class="header-section-number">2.2</span> Installing R/RStudio on a Computer with Admin Rights</h2>
+<p>To be developed.</p>
+<p>For ECTRL set up check below.</p>
+</div>
+<div id="installing-rrstudio-at-work-eurocontrol" class="section level2">
+<h2><span class="header-section-number">2.3</span> Installing R/RStudio at work (EUROCONTROL)</h2>
+<p>You can request the installation of the software via an installation ticket.
+Both R and RStudio belong to the “standard” software you can request via the self-service web-interface.</p>
+<p>Experience has shown that the installation is typically done within a reasonable time.
+However, IT security settings require some configuration. This is normally overlooked first.</p>
+<p>Assuming this is the case, you will encounter a first error when attempting to update pre-installed base packages or other packages you want to download.
+The error message will speak about a problem with a group policy or something similar.</p>
+<p>Thus, if you run into something like this:</p>
+<pre><code>... some cool error text ... &quot;group policy&quot; .... contact your system administrator</code></pre>
+<ul>
+<li>contact IT Helpdesk</li>
+<li>inform them about the error; and</li>
+<li>advise them to ensure the configuration in accordance with <strong>PRU configuration settings</strong> equivalent to Enrico or Rainer.</li>
+</ul>
+<p>With some luck, the ticket is solved in one go. We had cases where it took a couple of attempts.
+But there should be enough “template tickets” in the system for the helpdesk to find back the recipe and how to connect the dots.</p>
+<p>Please also consult the PRU wiki for handy system settings.
+Hoping your in-house installation ride will be a smooth one!
+If worse comes to worse, shout for help.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -221,7 +257,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rainer-rq-koelle/pru-learnR-booklet/edit/master/05-summary.Rmd",
+"link": "https://github.com/rainer-rq-koelle/pru-learnR-booklet/edit/master/02-installation-setup.Rmd",
 "text": "Edit"
 },
 "history": {

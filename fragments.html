@@ -136,7 +136,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>2</b> Literature</a></li>
+<li class="chapter" data-level="2" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html"><i class="fa fa-check"></i><b>2</b> Pre-Action and Installation</a><ul>
+<li class="chapter" data-level="2.1" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html#wetting-your-feet-with-rstudio.cloud"><i class="fa fa-check"></i><b>2.1</b> Wetting your feet with rstudio.cloud</a></li>
+<li class="chapter" data-level="2.2" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html#installing-rrstudio-on-a-computer-with-admin-rights"><i class="fa fa-check"></i><b>2.2</b> Installing R/RStudio on a Computer with Admin Rights</a></li>
+<li class="chapter" data-level="2.3" data-path="pre-action-and-installation.html"><a href="pre-action-and-installation.html#installing-rrstudio-at-work-eurocontrol"><i class="fa fa-check"></i><b>2.3</b> Installing R/RStudio at work (EUROCONTROL)</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a></li>
 <li class="chapter" data-level="4" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>4</b> Applications</a><ul>
 <li class="chapter" data-level="4.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>4.1</b> Example one</a></li>
@@ -175,9 +179,9 @@ For the time being it is safe to ignore them.</p>
 <div id="bookdown" class="section level2">
 <h2><span class="header-section-number">6.1</span> Bookdown</h2>
 <p>The engine behind this booklet is <strong>bookdown</strong>. The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="fragments.html#cb3-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
-<span id="cb3-2"><a href="fragments.html#cb3-2"></a><span class="co"># or the development version</span></span>
-<span id="cb3-3"><a href="fragments.html#cb3-3"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="fragments.html#cb4-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>
+<span id="cb4-2"><a href="fragments.html#cb4-2"></a><span class="co"># or the development version</span></span>
+<span id="cb4-3"><a href="fragments.html#cb4-3"></a><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></span></code></pre></div>
 <p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
 <p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</p>
 
