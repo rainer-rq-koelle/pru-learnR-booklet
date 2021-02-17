@@ -1,6 +1,6 @@
 --- 
-title: "PRU - Getting Started with R/RStudio Ecosystem"
-author: "RQ & PRU"
+title: "Getting Started with R/RStudio"
+author: "PRU"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -28,8 +28,13 @@ And learning R, RStudio, the many useful R packages combine for a universe that 
 
 Thus, the goal is to get you started and give you some orientation on how to navigate this universe.
 
-The booklet is not an invention of me. It uses the feedback from several runs of "intro to R" sessions.
-And it lives from the feedback, observations, and many ahas we had while hacking and learning together.
+The booklet is not an invention of the author. It uses the feedback from several runs of the "getting started" (intro to R/RStudio) sessions.
+And it lives from the feedback, observations, and the many *ahas* we had while hacking and learning together.
 
-If you find this resource useful, feel free to reuse it at your own risk!
+If you find this resource useful, feel free to reuse it!
+If you find mistakes or have ideas to improve the presentation/wording, please reach out to us.
+
+The R/RStudio ecosystem is a living organism and will change over time. 
+Keep in mind the date of this resource.
+
 
