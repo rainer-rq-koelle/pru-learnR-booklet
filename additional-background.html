@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | Getting Started with R/RStudio</title>
+  <title>Chapter 5 Additional Background | Getting Started with R/RStudio</title>
   <meta name="description" content="This booklet comprises the working material for getting started with R/RStudio. It reflects the hacking sessions of PRU members" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | Getting Started with R/RStudio" />
+  <meta property="og:title" content="Chapter 5 Additional Background | Getting Started with R/RStudio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="https://github.com/rainer-rq-koelle/pru-learnR-booklet" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | Getting Started with R/RStudio" />
+  <meta name="twitter:title" content="Chapter 5 Additional Background | Getting Started with R/RStudio" />
   
   <meta name="twitter:description" content="This booklet comprises the working material for getting started with R/RStudio. It reflects the hacking sessions of PRU members" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="final-words.html"/>
-<link rel="next" href="additional-background.html"/>
+<link rel="prev" href="references.html"/>
+<link rel="next" href="fragments.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -179,17 +179,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
+<div id="additional-background" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Additional Background</h1>
+<div id="package-installation" class="section level2">
+<h2><span class="header-section-number">5.1</span> Package Installation</h2>
+<p>There is a great blog post that provides useful background on package installation from different sources.
+If you have 10 minutes, it is recommended to go through the <a href="https://thomasadventure.blog/posts/install-r-packages/">post by Thomas Neitmann</a>.</p>
+<div id="installing-from-cran" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Installing from CRAN</h3>
+<p>The R mothership repository for packages is <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>.</p>
+<p>With <code>install.packages("ggplot2")</code> you will install the (latest released version of) {ggplot2} package and all its dependencies.
+Thus, be prepared that a package installation may result in several other packages to be installed as well.</p>
+<p>You can install multiple packages by providing them as a vector of package names using the c() function.
+For example, <code>install.packages(c("ggplot2", "ggmap", "dlyr"))</code> will install {ggplot2}, {ggmpap}, and {dplyr}, as well the dependent packages if applicable.</p>
+</div>
+<div id="installing-from-github-with-remotes" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Installing from Github with {remotes}</h3>
+<p>While CRAN is the mothership, many packages are developed and hosted on github.
+In particular, if you interested in evaluating a most recent development version of a packages, it is a good guess that this version is available on github.</p>
+<p>Before you can install any package from GitHub, you need to install the {remotes} package from CRAN, i.e. <code>install.packages("remotes")</code>.</p>
+<p>{remotes} supports the download of packages from GitHub by providing <em>“username/repository”</em> as argument to remotes::install_github().
+For example, the latest development version of {ggplot2} from GitHub can be downloaded with <code>remotes::install_github("tidyverse/ggplot2")</code></p>
+<p>If you download from GitHub, you are downloading and installing it from <em>source</em>.</p>
+<p>The {remotes} package supports also the download from other repositories, e.g. gitlab, bitbucket, etc. If you know what these repositories are, you can check for the respective install function from the {remotes} package.</p>
+</div>
+<div id="installing-binaries-or-from-source" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Installing Binaries or from Source</h3>
+<p>The install.packages() function has a type parameter that controls whether a package is installed from pre-complied binaries or from source.
+The former is the default on Windows, thus we are safe on EUROCONTROL computers. Other operating systems require a proper development environment.</p>
+<p>Pre-compiled binaries have been developed on a computer with your operating system.
+Thus, there is some testing, and the packages will load faster (as they do not have to be “built”).</p>
+<p>By default stay away from installing source.
+When you answer <em>no</em> R will attempt to install the previous binary version of the package.</p>
+</div>
+<div id="package-directory" class="section level3">
+<h3><span class="header-section-number">5.1.4</span> Package Directory</h3>
+<p>With the function <code>.libPaths()</code> you can check the path to which your packages will be loaded/installed.</p>
+<p>If you want to keep your installed packages in a specific path (or directory), you can provide the installation path to <code>install.packages()</code>.
+Check the help packages is unsure what to do.</p>
+<p>On EUROCONTROL computers, the read/write restrictions require the download of packages to a subfolder of <code>\C:\Users\&lt;your-user-name&gt;\dev</code>. You should find a subfolder <code>R\win-library\&lt;R-version-number&gt;</code>.
+No need to remember this. This should be set through the IT installation of R/RStudio.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="final-words.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="additional-background.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="references.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="fragments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -220,7 +260,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rainer-rq-koelle/pru-learnR-booklet/edit/master/06-references.Rmd",
+"link": "https://github.com/rainer-rq-koelle/pru-learnR-booklet/edit/master/80-additional-background.Rmd",
 "text": "Edit"
 },
 "history": {

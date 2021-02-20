@@ -8,5 +8,11 @@ installing-rrstudio-on-a-computer-with-admin-rights
 installing-rrstudio-at-work-eurocontrol
 first-steps
 final-words
+additional-background
+package-installation
+installing-from-cran
+installing-from-github-with-remotes
+installing-binaries-or-from-source
+package-directory
 fragments
 bookdown
