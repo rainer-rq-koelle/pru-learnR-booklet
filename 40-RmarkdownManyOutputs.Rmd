@@ -1,0 +1,56 @@
+# RMarkdown - 1 format ... many outputs
+
+RMarkdown - one format - many outputs
+
+dplyr comes with starwars example data
+starwars %>% 
+  mutate(name, bmi = mass / ((height / 100)  ^ 2)) %>%
+  select(name:mass, bmi)
+
+basic markdown ====================
+header, bullet points, 
+code chunks
+
+ggplot
+install.packages("plotly")
+ggplotly(p)
+
+Going to the DARK SIDE!
+
+```{css}
+body {
+	background-color: black;
+	filter: invert(1);
+}
+```
+
+pdf
+word document
+	reference_docx: template.docx
+
+mention rticles --> conference papers
+bookdown
+
+
+slides - presentations
+output:
+	ioslides_presentation
+power point
+
+output:
+  tuftee::tufte_html:
+    tufte_variant: envisioned
+
+
+dashboard
+output:
+ flexdashboard::flex_dashboard: default
+
+
+pagedown - pdf from html
+pagedreport
+
+
+bookdown
+output:
+  bookdown::gitbook: default
